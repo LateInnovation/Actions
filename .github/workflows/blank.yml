@@ -6,6 +6,8 @@ name: CI
 on:
   branch_protection_rule:
     types: [created, edited, deleted]
+    paths:
+    - 'api/**'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
