@@ -1,0 +1,10 @@
+name: OnUpdate
+
+on: project:
+    types: [created, deleted]
+
+jobs:
+  echo_msg:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 File Updated!!!!"
