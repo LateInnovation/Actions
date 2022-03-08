@@ -1,11 +1,19 @@
+# This is a basic workflow to help you get started with Actions
+
 name: OnUpdate
 
-on: 
-    project:
-        types: [created, deleted]
+# Controls when the workflow will run
+on:
+  project:
+    types: [created, deleted]
 
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  echo_msg:
+  # This workflow contains a single job called "build"
+  pop_msg:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 File Updated!!!!"
+      - run: echo "File Updated"
