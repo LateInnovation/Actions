@@ -1,7 +1,8 @@
 name: OnUpdate
 
-on: project:
-    types: [created, deleted]
+on: 
+    project:
+        types: [created, deleted]
 
 jobs:
   echo_msg:
