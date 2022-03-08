@@ -4,8 +4,7 @@ name: CI
 
 # Controls when the workflow will run
 on:
-  branch_protection_rule:
-    types: [created, edited, deleted]
+  push:
     paths:
     - 'Actions/**'
 
